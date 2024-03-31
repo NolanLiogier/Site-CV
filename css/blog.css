@@ -1,0 +1,29 @@
+body {
+  background-color: rgb(224, 224, 224);
+  text-align: center;
+ }
+ 
+ #carte {
+  background-color: white;
+
+  /*positionnement*/
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  /*mise en valeur*/
+  box-shadow: 0 0 20px 0px gray;
+  border-radius: 10px;
+
+  display: block;
+  height: 140px;
+  width: 300px;
+ }
+
+ #millieu > a {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+ }
+

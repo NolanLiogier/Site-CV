@@ -1,0 +1,181 @@
+ /* créer un tableau et le mettre en valeur*/
+ #cv-body {
+    background-color: rgb(224, 224, 224);
+    overflow: auto;
+   
+   }
+   
+   #tableau {
+     background-color: white;
+  
+     /* positionnement */
+     position: absolute; /* Remplacer 'fixed' par 'absolute' */
+     top: 5%;
+     left: 50%;
+     transform: translate(-50%);
+  
+     /* mise en valeur */
+     box-shadow: 0 0 20px 0px gray;
+  
+     border-radius: 10px;
+   }
+  
+  
+  /*créer l'aspect carte*/
+  #carte {
+    display: grid;
+    grid-auto-flow: row;
+    text-align: center;
+  }
+  
+  /*Propriété de la cellule de gauche*/
+  #gauche {
+    display:block;
+    height: 400px;
+    width: 400px;
+  
+    background-color: rgb(255, 216, 164);
+  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+    border-radius: 10px 10px 0 0;
+  }
+  
+  /*Propriété de la photo*/
+  #gauche > img {
+    display: block;
+    width: 180px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /*Titre "Nolan Liogier"*/
+  #gauche > h2 {
+    margin-top: 20px ;
+  }
+  
+  /*Propriété de la barre bleu*/
+  #gauche > hr {
+    display: block;
+    height: 1px;
+    width: 50px;
+    border: none;
+  
+    background-color: #007bff;
+  
+    margin-top: 10px ;
+  }
+  
+  /*Titre "Apprenti dev"*/
+  #gauche > h3 {
+    margin-top: 20px ;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  /*Propriété de la cellule du bas*/
+  #bas {
+    position: fixed;
+    bottom: 0; /*coller les icones en bas de la cellule*/
+  
+    height: 50px;
+  
+    background-color: rgb(255, 255, 255);
+  
+    border-radius: 10px;
+  }
+  
+  #icones {
+    list-style: none;
+    margin-top: 13px;
+  }
+  
+  #icones > a {
+    text-decoration: none;
+    color: black;
+    margin-left: 60px;
+    font-size: 22px;
+  }
+  
+  /*Propriété de la cellule de droite*/
+  #droite{
+    display: block;
+    width: 400px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  /*Titres*/
+  
+  #droite > h1 {
+    font-size: 60px;
+    margin-top: 30px;
+    margin-bottom: 0; /*enleve la marge par défaut*/
+  }
+  
+  #droite > h2 {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  
+  /*Bouttons cliquables*/
+  
+  #droite > a{
+    font-weight: bold;
+    padding: 10px 40px;/*taille du boutton*/
+  
+    text-decoration: none; /*supprimer l'effet lien*/
+    cursor: pointer; /*change le curseur*/
+  
+    border-radius: 10px; 
+    border: 2px solid #007bff; /*bordure*/
+  
+    margin: 8px;
+  }
+  
+  #cv{
+    /*couleurs*/
+    color: #fff; 
+    background-color: #007bff;  
+    transition: background-color 0.3s, color 0.3s; 
+  }
+  
+  #cv:hover {
+    /*couleurs au survol*/
+    background-color: #ffffff;
+    color: #007bff;
+  }
+  
+  #blog{
+    /*couleurs*/
+    color: #007bff; 
+    background-color: white;  
+    transition: background-color 0.3s, color 0.3s; 
+  }
+  
+  #blog:hover {
+    /*couleurs au survol*/
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /*Paragraphe*/
+  #droite > p {
+    margin-top: 40px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
